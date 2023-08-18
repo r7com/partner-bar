@@ -18,7 +18,7 @@ Follow the steps below to implement the Partner Bar
 > 2. Copy and paste the code below and make sure it is the first element right after the opening tag
 
 ```sh
-<cda-partners-bar style="height: 50px;display: block;" tag-manager="true" record-origin-only="false" no-follow='false'></cda-partners-bar>
+<cda-partners-bar style="height: 50px;display: block;" tag-manager="true" record-origin-only="false" no-follow='true'></cda-partners-bar>
 ```
 ---
 
@@ -52,5 +52,5 @@ After the implementation is complete, follow these steps to verify that the New 
 | --------------------------------------- | ------------------------------------------------------------------------------------------- |
 | `record-origin-only`                    | Enables the option to display the bar only when the user accesses the site through R7.      |
 | `tag-manager`                           | Enables tagManager                                                                          |
-| `no-follow`                             | Enables no-follow in the menu                                                               |
+| `no-follow`                             | Enables no-follow in the itens of menu                                                      |
 | `style="height: 50px;display: block;"`  | Adds a 50px space to the slash thus preventing CLS error (optional)                         |
