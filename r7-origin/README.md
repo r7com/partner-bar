@@ -11,7 +11,9 @@ Follow the steps below to implement the Partner Bar
 ```sh
 <script id="partners-bar" type="module" src="https://assets.r7.com/cda-partners-bar/cda-partners-bar/cda-partners-bar.esm.js"></script>
 ```
+The script tag should just have the type="module", no need for async and defer. By default the type module already behaves without blocking the rendering of the page and implicitly there is already a "defer" mode when using the type module, and therefore, the script can stay in HTML. It is important to remove lazy load scripts, cache and other plugins inside the bar to avoid performance problems because the browser itself will cache the script after the first request.
 
+---
 ### Step 2: Insert the attributes in the <body> of your website
     
 > 1. Locate the <body> section of the document<br>
